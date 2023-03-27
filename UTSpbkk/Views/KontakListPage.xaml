@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:models="clr-namespace:UTSpbkk.Models"
+             xmlns:viewModels="clr-namespace:UTSpbkk.ViewModels"
+             x:DataType="viewModels:KontakListPageViewModel"
+             x:Class="UTSpbkk.Views.KontakListPage"
+             Title="Kontak List">
+    <VerticalStackLayout>
+        <Label Text="Kontak List"  FontSize="28"/>
+        <Button Text="Add Kontak" Command="{Binding AddUpdateKontakCommand}" HorizontalOptions="EndAndExpand"/>
+
+        <CollectionView ItemsSource="{Binding Kontaks}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="models:KontakModel">
+                    <Frame Margin="10" Padding="10">
+                        <StackLayout>
+                            <HorizontalStackLayout Spacing="15">
+                                <Label Text="{Binding Nama}" FontSize="20" FontAttributes="Bold"/>
+                            </HorizontalStackLayout>
+                        </StackLayout>
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding Source={x:RelativeSource AncestorType={x:Type viewModels:KontakListPageViewModel}},Path=DisplayActionCommand}" 
+                                                  CommandParameter="{Binding .}"/>
+                        </Frame.GestureRecognizers>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </VerticalStackLayout>
+</ContentPage>

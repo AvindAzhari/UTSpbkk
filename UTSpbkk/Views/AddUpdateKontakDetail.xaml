@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="UTSpbkk.Views.AddUpdateKontakDetail"
+             Title="Add / Update Kontak Details">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Label">
+                <Setter Property="FontSize" Value="14"/>
+                <Setter Property="TextColor" Value="SlateGrey"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <StackLayout Margin="10" Spacing="15">
+
+        <VerticalStackLayout>
+            <Label Text="Nama" FontSize="16"/>
+            <Entry Text="{Binding KontakDetail.Nama}" Placeholder="Nama"/>
+            <BoxView HeightRequest="0.8" Color="Gray"/>
+
+        </VerticalStackLayout>
+
+        <VerticalStackLayout>
+            <Label Text="Perusahaan" FontSize="16"/>
+            <Entry Text="{Binding KontakDetail.Perusahaan}" Placeholder="Perusahaan"/>
+            <BoxView HeightRequest="0.8" Color="Gray"/>
+
+        </VerticalStackLayout>
+
+        <VerticalStackLayout>
+            <Label Text="Email" FontSize="16"/>
+            <Entry Text="{Binding KontakDetail.Email}" Placeholder="Nama"/>
+            <BoxView HeightRequest="0.8" Color="Gray"/>
+
+        </VerticalStackLayout>
+
+        <VerticalStackLayout>
+            <Label Text="Telp Kantor" FontSize="16"/>
+            <Entry Text="{Binding KontakDetail.Telpkantor}" Placeholder="Telk Kantor"/>
+            <BoxView HeightRequest="0.8" Color="Gray"/>
+
+        </VerticalStackLayout>
+
+        <VerticalStackLayout>
+            <Label Text="Telp Pribadi" FontSize="16"/>
+            <Entry Text="{Binding KontakDetail.Telpprib}" Placeholder="Telp Pribadi"/>
+            <BoxView HeightRequest="0.8" Color="Gray"/>
+
+        </VerticalStackLayout>
+
+        <Button Text="Save" Command="{Binding AddUpdateKontakCommand}"/>
+    </StackLayout>
+</ContentPage>

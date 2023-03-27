@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UTSpbkk</name>
+    </assembly>
+    <members>
+        <member name="P:UTSpbkk.ViewModels.AddUpdateKontakDetailViewModel.KontakDetail">
+            <inheritdoc cref="F:UTSpbkk.ViewModels.AddUpdateKontakDetailViewModel._kontakDetail"/>
+        </member>
+        <member name="F:UTSpbkk.ViewModels.AddUpdateKontakDetailViewModel.addUpdateKontakCommand">
+            <summary>The backing field for <see cref="P:UTSpbkk.ViewModels.AddUpdateKontakDetailViewModel.AddUpdateKontakCommand"/>.</summary>
+        </member>
+        <member name="P:UTSpbkk.ViewModels.AddUpdateKontakDetailViewModel.AddUpdateKontakCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:UTSpbkk.ViewModels.AddUpdateKontakDetailViewModel.AddUpdateKontak"/>.</summary>
+        </member>
+        <member name="F:UTSpbkk.ViewModels.KontakListPageViewModel.getKontakListCommand">
+            <summary>The backing field for <see cref="P:UTSpbkk.ViewModels.KontakListPageViewModel.GetKontakListCommand"/>.</summary>
+        </member>
+        <member name="P:UTSpbkk.ViewModels.KontakListPageViewModel.GetKontakListCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:UTSpbkk.ViewModels.KontakListPageViewModel.GetKontakList"/>.</summary>
+        </member>
+        <member name="F:UTSpbkk.ViewModels.KontakListPageViewModel.addUpdateKontakCommand">
+            <summary>The backing field for <see cref="P:UTSpbkk.ViewModels.KontakListPageViewModel.AddUpdateKontakCommand"/>.</summary>
+        </member>
+        <member name="P:UTSpbkk.ViewModels.KontakListPageViewModel.AddUpdateKontakCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:UTSpbkk.ViewModels.KontakListPageViewModel.AddUpdateKontak"/>.</summary>
+        </member>
+        <member name="F:UTSpbkk.ViewModels.KontakListPageViewModel.displayActionCommand">
+            <summary>The backing field for <see cref="P:UTSpbkk.ViewModels.KontakListPageViewModel.DisplayActionCommand"/>.</summary>
+        </member>
+        <member name="P:UTSpbkk.ViewModels.KontakListPageViewModel.DisplayActionCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:UTSpbkk.ViewModels.KontakListPageViewModel.DisplayAction(UTSpbkk.Models.KontakModel)"/>.</summary>
+        </member>
+    </members>
+</doc>
